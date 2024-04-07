@@ -46,7 +46,7 @@ export default function Nav() {
         </button>
 
         <div id="menu">
-          <h1>Pages</h1>
+          <h1 className="header"><span className="header-highlight">Pages</span></h1>
           <button id="hide-menu" onClick={() => {
             const menu = document.querySelector("#menu");
             menu.style.display="none";

@@ -22,11 +22,11 @@ body {
 * {
   box-sizing: border-box;
 }
-.hidden-on-desktop {
-  display: none;
-}
 .hidden-on-mobile {
   display: block;
+}
+.hidden-on-desktop {
+  display: none;
 }
 #main-navbar {
   display: flex;
@@ -184,11 +184,11 @@ body {
     border: none;
     width: 100%;
   }
-  .hidden-on-mobile {
-    display: none;
-  }
   .hidden-on-desktop {
     display: block;
+  }
+  .hidden-on-mobile {
+    display: none;
   }
   #todos {
     width: 90%;
@@ -213,6 +213,7 @@ body {
     z-index: 1000;
     font-family: "Poppins";
     box-shadow: 0 0 500px black;
+    display: none;
   }
   #menu > h1 {
     font-family: "Sephyr";
