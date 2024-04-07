@@ -22,12 +22,6 @@ body {
 * {
   box-sizing: border-box;
 }
-.hidden-on-mobile {
-  display: block;
-}
-.hidden-on-desktop {
-  display: none;
-}
 #main-navbar {
   display: flex;
   align-items: center;
@@ -178,17 +172,23 @@ body {
   align-items: center;
   justify-content: center;
 }
+.hidden-on-desktop {
+  display: none;
+}
+.hidden-on-mobile {
+  display: block;
+}
 
 @media (pointer:none), (pointer:coarse) {
   .body {
     border: none;
     width: 100%;
   }
-  .hidden-on-desktop {
-    display: block;
-  }
   .hidden-on-mobile {
     display: none;
+  }
+  .hidden-on-desktop {
+    display: block;
   }
   #todos {
     width: 90%;

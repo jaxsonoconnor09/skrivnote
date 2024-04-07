@@ -45,7 +45,7 @@ export default function Nav() {
           <Icons.FaBars />
         </button>
 
-        <div id="menu">
+        <div id="menu" className="hidden-on-desktop">
           <h1 className="header"><span className="header-highlight">Pages</span></h1>
           <button id="hide-menu" onClick={() => {
             const menu = document.querySelector("#menu");
