@@ -22,6 +22,12 @@ body {
 * {
   box-sizing: border-box;
 }
+.hidden-on-desktop {
+  display: none;
+}
+.hidden-on-mobile {
+  display: block;
+}
 #main-navbar {
   display: flex;
   align-items: center;
@@ -165,4 +171,72 @@ body {
 }
 .todo-delete {
   background: var(--accent);
+}
+#todo-controls {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .body {
+    border: none;
+    width: 100%;
+  }
+  .hidden-on-mobile {
+    display: none;
+  }
+  .hidden-on-desktop {
+    display: block;
+  }
+  #todos {
+    width: 90%;
+  }
+  #todo-controls > #input {
+    width: calc(100% - 100px);
+  }
+  .nav-button {
+    border-radius: none;
+    border: none;
+  }
+  #menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--background);
+    border: none;
+    border-left: 1px solid var(--border);
+    height: 100vh;
+    width: 75%;
+    /* border: 1px solid red; */
+    z-index: 1000;
+    font-family: "Poppins";
+    box-shadow: 0 0 500px black;
+  }
+  #menu > h1 {
+    font-family: "Sephyr";
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin: 50px 0;
+  }
+  #mobile-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav-button {
+    font-size: 20px;
+  }
+  #hide-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    font-size: 20px;
+    color: var(--text);
+    border: none;
+  }
 }

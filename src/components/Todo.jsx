@@ -54,7 +54,7 @@ export default function Todo() {
   return (
     <div className="body align-center">
       <p className="header">To-<span className="header-highlight">do</span></p>
-      <span>
+      <span id="todo-controls">
         <input type="text" id="input" onKeyDown={(event) => {
           if (event.key == "Enter") {
             addTodo(input);
